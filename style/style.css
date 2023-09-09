@@ -1,0 +1,253 @@
+/* COLOUR PALETTE
+
+Dark purple: 35155D
+Light purple: 512B81
+Mid blue: 4477CE
+Light blue: 8CABFF
+Pink: F79BD3
+LIGHT PINK: FFC7EA
+
+*/
+
+body {
+  width: 100%;
+  padding:0px;
+  margin: 50px 0px 0px 0px;
+  font-family: Nunito, sans-serif;
+}
+
+/* FONTS */
+
+h1 {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 700;
+  font-size: 2em;
+  color: #512B81;
+  padding: 0px;
+  margin: 0px 0px 10px 0px;
+}
+
+h2 {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 200;
+  font-size: 1.5em;
+  color: #4477CE;
+}
+
+h2.dark-text {
+  color: #35155D;
+}
+
+h2.purple-text {
+  color: #512B81;
+}
+
+h3 {
+  font-size: 0.9em;
+  color: #35155D;
+}
+
+p { 
+  color: #35155D;
+  padding: 0% 0px 0px 0px;
+  margin: 0px 0px 10px 0px;
+}
+
+a {
+  color: #8CABFF;
+}
+
+/* CLASSES AND DIVS */
+.image {
+  border-radius: 50%;
+  margin: 0px;
+}
+
+.icon {
+  fill: #512B81;
+  padding: 10px;
+  width: 40px;
+}
+
+/* MENU */
+
+.navbar {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #F79BD3;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 8px 10px;
+  text-decoration: none;
+  margin: 10px;
+  border-radius: 50%;
+}
+
+.navbar a:hover {
+  background: #35155D;
+  color: #FFC7EA;
+}
+
+
+
+/* REST OF PAGE */ 
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0px 30px 0px;
+  margin: 0px;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr;
+  width: 70%;
+  padding: 40px 0px 40px 0px;
+}
+
+.item {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  gap: 0px;
+}
+
+.onecol {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  width: 70%;
+  gap: 0px;
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: minmax(150px, auto) minmax(150px, auto) minmax(150px, auto);
+  grid-template-rows: minmax(150px, auto) minmax(150px, auto);
+  gap: 10px;
+  margin: 10px 10px 10px 10px;
+  text-align: center;
+}
+
+.showcase-p {
+  font-size: 0.8em;
+  font-weight: 400;
+  font-family: 'Libre Baskerville', serif;
+  font-style: italic;
+  text-align: left;
+}
+
+.pink {
+  background-color: #F79BD3;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 10%;
+}
+
+.blue {
+  background-color: #8CABFF;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 10%;
+}
+
+
+/* COLOURS */
+#pink {
+  background-color: #FFC7EA;
+}
+
+#library {
+  background-image: url("../images/mcrlibrary.jpg");
+}
+
+
+
+/* MEDIA QUERY */ 
+
+@media (max-width: 1200px) {
+  body {
+    margin: 25px 0px 0px 0px;
+  }
+
+  .navbar {
+    position: fixed;
+    height: 25px;
+  }
+  .navbar a {
+    float: left;
+    display: block;
+    color: white;
+    font-size: 0.8em;
+    text-align: center;
+    padding: 2px 2px;
+    text-transform: uppercase;
+    margin: 2px;
+    border-radius: 0%;
+  }
+  .hero {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr;
+    width: 70%;
+    padding: 30px 0px 0px 0px;
+    margin: 0px;
+  }
+
+  .item {
+    padding: 20px 0px 20px 0px;
+    margin: 0px;
+  }
+
+}
+
+@media (min-width: 481px) and (max-width: 800px) {
+  .container {
+    display: grid;
+    grid-template-columns: minmax(200px, auto) minmax(200px, auto);
+    grid-template-rows: minmax(100px, auto) minmax(100px, auto) minmax(100px, auto);
+    gap: 10px;
+    margin: 10px 10px 10px 10px;
+    text-align: center;
+  }
+
+}
+
+@media (min-width: 20px) and (max-width: 480px) {
+  .container {
+    display: grid;
+    grid-template-columns: minmax(200px, 250px);
+    grid-template-rows: minmax(100px, auto) minmax(100px, auto) minmax(100px, auto) minmax(100px, auto) minmax(100px, auto) minmax(100px, auto);
+    gap: 5px;
+    margin: 10px 10px 10px 10px;
+    text-align: center;
+  }
+
+  .showcase-p {
+    font-size: 0.8em;
+    font-family: Nunito, sans-serif;
+    font-style: normal;
+    text-align: center;
+    padding: 2px;
+    margin: 0px;
+  }
+
+  h3 {
+    padding: 2px;
+    margin: 0px;
+  }
+}
